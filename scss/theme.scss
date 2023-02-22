@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Ubuntu+Mono:wght@400;700&display=swap');
+
+
+@function theme($property) {
+    @if not map-has-key($themes, $color-theme) {
+        @return map-get($themes, 'dark', $property);
+    }
+    @return map-get($themes, $color-theme, $property);
+}
+
+// complex variables aka fonts
+$comfortaa: 'Comfortaa', sans-serif;
+$sans-serif: 'Open Sans', sans-serif;
+$cursive: 'Comic Sans MS', cursive;
+$monospace: 'Ubuntu Mono', monospace; 
+
+$themes: (
+    'dark': (
+        background-color: #282a36,
+        foreground-color: #ccc,
+        primary-color: $primary-accent,
+        secondary-color: $secondary-accent,
+        trinary: $trinary-accent,
+        heading-font: $comfortaa,
+        text-font: $sans-serif,
+    ),
+    'light': (
+        background-color: #ccc,
+        foreground-color: #222,
+        primary-color: $primary-accent,
+        secondary-color: $secondary-accent,
+        trinary: $trinary-accent,
+        heading-font: $comfortaa,
+        text-font: $sans-serif,
+    ),
+    'ugly': (
+        background-color: #ff94ca,
+        foreground-color: #71ff64,
+        primary-color: $primary-accent,
+        secondary-color: $secondary-accent,
+        trinary: $trinary-accent,
+        heading-font: $cursive,
+        text-font: $cursive,
+    ),
+    'dev': (
+        background-color: dodgerblue,
+        foreground-color: rebeccapurple,
+        primary-color: $primary-accent,
+        secondary-color: $secondary-accent,
+        trinary: $trinary-accent,
+        heading-font: $monospace,
+        text-font: $cursive,
+    ),
+)

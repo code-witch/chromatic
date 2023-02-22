@@ -1,0 +1,54 @@
+@mixin default-text {
+    font-family: theme('text-font');
+
+}
+
+a, address {
+    @include default-text;
+}
+
+b, strong {
+    @include default-text;
+    font-weight: bold;
+}
+
+i, em {
+    @include default-text;
+    font-style: italic;
+}
+
+p {
+    @include default-text;
+    font-size: medium;
+}
+
+q, blockquote {
+    @include default-text;
+    &::before {
+        content: open-quote;
+    }
+    &::after {
+        content: close-quote;
+    }
+}
+
+marquee {
+    @include default-text;
+}
+
+pre {
+    @include default-text;
+    font-family: $monospace;
+}
+
+code {
+    @include default-text;
+}
+
+s {
+    @include default-text;
+}
+
+abbr {
+    @include default-text;
+}

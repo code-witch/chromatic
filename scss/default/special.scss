@@ -1,0 +1,34 @@
+@mixin default-special {
+
+}
+
+div {
+    @include default-special;
+    display: block;
+    border: red 1px solid;
+}
+
+embed {
+    @include default-special;
+}
+
+section {
+    @include default-special;
+}
+
+iframe {
+    @include default-special;
+}
+
+audio {
+    @include default-special;
+}
+
+canvas {
+    @include default-special;
+}
+
+kbd {
+    @include default-special;
+}
+

@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Ubuntu+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Ubuntu+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Ubuntu+Mono:wght@400;700&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+input, textarea, button, select {
+  font: inherit;
+}
+
+a, address {
+  font-family: "Open Sans", sans-serif;
+}
+
+b, strong {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+i, em {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: medium;
+}
+
+q, blockquote {
+  font-family: "Open Sans", sans-serif;
+}
+q::before, blockquote::before {
+  content: open-quote;
+}
+q::after, blockquote::after {
+  content: close-quote;
+}
+
+marquee {
+  font-family: "Open Sans", sans-serif;
+}
+
+pre {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+code {
+  font-family: "Open Sans", sans-serif;
+}
+
+s {
+  font-family: "Open Sans", sans-serif;
+}
+
+abbr {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Comfortaa", sans-serif;
+  padding: 5px;
+  overflow: hidden;
+  text-align: center;
+  font-size: xx-large;
+}
+
+h2 {
+  font-family: "Comfortaa", sans-serif;
+  padding: 5px;
+  overflow: hidden;
+  text-align: center;
+  font-size: x-large;
+}
+
+h3 {
+  font-family: "Comfortaa", sans-serif;
+  padding: 5px;
+  overflow: hidden;
+  text-align: center;
+  font-size: large;
+}
+
+h4 {
+  font-family: "Comfortaa", sans-serif;
+  padding: 5px;
+  overflow: hidden;
+  text-align: center;
+  font-size: medium;
+}
+
+h5 {
+  font-family: "Comfortaa", sans-serif;
+  padding: 5px;
+  overflow: hidden;
+  text-align: center;
+  font-size: small;
+}
+
+h6 {
+  font-family: "Comfortaa", sans-serif;
+  padding: 5px;
+  overflow: hidden;
+  text-align: center;
+  font-size: x-small;
+}
+
+form {
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 5px;
+  outline: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input {
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 5px;
+  outline: transparent;
+  border: none;
+  border-bottom: 2px solid #3879b9;
+}
+
+input:focus {
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 5px;
+  outline: transparent;
+}
+
+select {
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 5px;
+  outline: transparent;
+  margin: 5px 5px;
+  padding: 0;
+  border: 2px solid #3879b9;
+}
+
+select:focus {
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 5px;
+  outline: transparent;
+}
+
+button {
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 5px;
+  outline: transparent;
+  margin: 5px auto;
+  padding: 10px;
+  cursor: pointer;
+  background: #21232d;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  border-radius: 10px;
+  border-style: none;
+  font-size: medium;
+}
+
+button:hover {
+  transition: background-color ease-in-out 0.5s;
+  background: #3e4153;
+}
+
+label {
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 5px;
+  outline: transparent;
+  flex-direction: column;
+}
+
+div {
+  display: block;
+  border: red 1px solid;
+}
+
+.logo {
+  margin: 0 5%;
+  padding: 5% 0;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 15vw;
+  background: linear-gradient(to right, #b93883, #3879b9, #38b983, #b9ac38);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+}
+
+.logo-msg {
+  font-family: "Open Sans", sans-serif;
+  margin: 10px;
+  padding: 5px;
+  font-size: 12pt;
+  font-weight: lighter;
+  text-align: center;
+  font-style: italic;
+}
+
+.navbar {
+  display: block;
+  font-family: "Comfortaa", sans-serif;
+  text-align: center;
+  align-self: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 100% 0;
+  font-size: 24pt;
+  min-height: 30px;
+}
+
+.navbar:hover {
+  transition: background-color 0.5s ease-in-out;
+  background: #333545;
+}
+
+* {
+  color: #ccc;
+  background: #282a36;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+title {
+  display: none;
+}
+
+html {
+  display: flex;
+}
+
+body {
+  display: grid;
+  grid-template-areas: "navbar" "main-content" "footer";
+  grid-template-rows: 10fr 85fr 5fr;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  grid-area: navbar;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+}
+
+main {
+  grid-area: main-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  min-height: 30px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */

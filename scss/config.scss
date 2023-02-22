@@ -1,0 +1,16 @@
+// Main Properties
+$color-theme: 'dark';
+$primary-accent: #3879b9;
+$secondary-accent: #38b983;
+$trinary-accent: #c3cf1d;
+
+
+// Logo Properties
+// You can put any @import for the font you want here to import the font to use.
+// Just be sure to replace the $logo-font variable too.
+//
+// Ex:
+// @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+// $logo-font: 'Pacifco', sans-serif;
+$logo-font: 'Comfortaa', sans-serif;
+$logo-color: linear-gradient(to right,#b93883,#3879b9,#38b983,#b9ac38);

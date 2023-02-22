@@ -1,0 +1,36 @@
+@mixin base-heading {
+    font-family: theme('heading-font');
+    padding: 5px;
+    overflow: hidden;
+    text-align: center;
+}
+
+h1 {
+    @include base-heading;
+    font-size: xx-large;
+}
+
+h2 {
+    @include base-heading;
+    font-size: x-large;
+}
+
+h3 {
+    @include base-heading;
+    font-size: large;
+}
+
+h4 {
+    @include base-heading;
+    font-size: medium;
+}
+
+h5 {
+    @include base-heading;
+    font-size: small;
+}
+
+h6 {
+    @include base-heading;
+    font-size: x-small;
+}
