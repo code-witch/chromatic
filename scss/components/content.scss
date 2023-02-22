@@ -1,0 +1,41 @@
+
+// RE WORK THIS FILE, THIS IS TEMP TO USE THIS FOR THE GITHUB PAGE
+
+.primary-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px darken(theme('background-color'), 2%);
+    background: darken(theme('background-color'), 5%);
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.secondary-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.secondary-content p {
+    padding: 10px;
+    font-size: 20pt;
+    word-wrap: break-word;
+    background: darken(theme('background-color'), 5%);
+}
+
+.primary-content img {
+    height: auto;
+    width: 350px;
+
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    justify-items: center;
+    background: darken(theme('background-color'), 5%);
+}

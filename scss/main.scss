@@ -6,13 +6,14 @@
 // Default HTML Elements
 @import './default/text';
 @import './default/heading';
-@import './default/form';
-@import './default/table';
+// @import './default/form';
+// @import './default/table';
 @import './default/special';
 
 // Custom UI
 @import './components/logo';
 @import './components/navbar';
+@import './components/content.scss';
 // @import './components/card';
 // @import './components/sidebar';
 // @import './components/piechart';
