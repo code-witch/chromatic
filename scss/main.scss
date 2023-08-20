@@ -14,16 +14,17 @@
 @import './components/logo';
 @import './components/navbar';
 @import './components/content.scss';
-// @import './components/card';
+@import './components/card';
 // @import './components/sidebar';
 // @import './components/piechart';
 
 
-* {
+html {
     color: theme('foreground-color');
     background: theme('background-color');
     font-family: theme('text-font');
     overflow-x: hidden;
+    display: flex;
     // overflow-y: hidden;
 }
 
@@ -31,9 +32,9 @@ title {
     display: none;
 }
 
-html {
-    display: flex;
-}
+// html {
+//     display: flex;
+// }
 
 body {
     display: grid;

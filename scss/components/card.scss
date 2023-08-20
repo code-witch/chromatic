@@ -1,0 +1,62 @@
+.card {
+    background: rgba(theme('background-color'), $opacity);
+    backdrop-filter: blur(1.5rem);
+    min-width: 25%;
+    min-height: 65%;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px 10px;
+
+    display: grid;
+    grid-template-areas: 'title' 'main' 'scrollable' 'buttons';
+    grid-template-rows: 10fr 35fr 25fr 10fr;
+}
+.card * {
+    text-align: center;
+}
+
+.card-title {
+    grid-area: title;
+}
+
+.card-main {
+    grid-area: main;
+}
+
+.card-scrollable {
+    grid-area: scrollable;
+}
+
+.card-buttons {
+    grid-area: buttons;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.card-buttons * {
+    width: 100%;
+    // border-radius: 0;
+}
+
+
+.card-container {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    // justify-self: center;
+    // justify-items: center;
+    align-items: center;
+    // align-self: center;
+    // align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#test {
+    background: none;
+    background-image: url('C:/Programming/frontend/code-witch.github.io/startup/public/imgs/flatorte.jpg') !important;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    // background-image: url('../../../startup/public/imgs/flatorte.jpg');
+}
